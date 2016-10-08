@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<h3>@ViewBag.Message</h3>
+@{
+    foreach (int[] stor in @ViewBag.storage)
+    {
+        <p>
+            @foreach(int a in stor){
+                @a <span/>
+            }
+        </p>
+    }
+}

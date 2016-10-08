@@ -1,0 +1,19 @@
+﻿@using WebApplication2.helpers
+@{
+    ViewBag.Title = "Calendar";
+}
+
+@{
+    int month = 5;
+    int year = 2016;
+    string day = "Sunday";
+    int[] offdays = {1,9,10};
+}
+
+<h2>Calendar - @CalendarHelper.NameOfMonth(month) - @year</h2>
+
+
+
+
+@Html.CreateCalendar(month,year,day,offdays)
+
